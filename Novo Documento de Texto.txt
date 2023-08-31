@@ -1,10 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Link para Mensagem de Aniversário</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagem Especial</title>
+    <style>
+        body {
+            background-color: #f0f0f0; /* Cor de fundo */
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Para esconder a barra de rolagem */
+        }
+
+        #mensagem {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff0066; /* Cor do texto destacado */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            white-space: nowrap; /* Impede a quebra de linha */
+            animation: scroll 10s linear infinite;
+        }
+
+        #imagem {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        #submensagem {
+            font-size: 18px;
+            color: #333;
+        }
+
+        /* Animação de rolagem do texto */
+        @keyframes scroll {
+            0% {
+                transform: translate(-50%, -50%);
+            }
+            100% {
+                transform: translate(-50%, -50%) translateX(-100%);
+            }
+        }
+    </style>
 </head>
 <body>
-    <a href="https://seuservidor.com/caminho/para/index.php">Clique aqui para abrir a mensagem</a>
+    <div id="mensagem">Sou muito feliz por ter decidido me tornar o homem da tua vida a um ano atrás!</div>
+    <img id="imagem" src="caminho/para/sua-imagem.jpg" alt="Nossa Foto">
+    <div id="submensagem">"... As muitas águas não pode apagar nosso amor!"</div>
 </body>
 </html>
