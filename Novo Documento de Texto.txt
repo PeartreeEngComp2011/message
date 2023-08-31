@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Link para Mensagem de Aniversário</title>
+</head>
+<body>
+    <a href="https://seuservidor.com/caminho/para/index.php">Clique aqui para abrir a mensagem</a>
+</body>
+</html>
